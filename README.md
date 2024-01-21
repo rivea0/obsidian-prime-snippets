@@ -13,7 +13,25 @@ git clone git@github.com:rivea0/obsidian-prime-snippets.git
 cp obsidian-prime-snippets/*.css <path/to/your/vault>/.obsidian/snippets
 ```
 
-# Snippets
+# Table of Contents
+- [Snippets](#snippets)
+    - [Callout Emojis](#callout-emojis)
+        - [Usage](#callout-emojis-usage)
+        - [List of emojis](#list-of-emojis)
+            - [Activities](#activities)
+            - [Animals & nature](#animals--nature)
+            - [Food & drink](#food--drink)
+            - [Objects](#objects)
+            - [Symbols](#symbols)
+            - [Travel & places](#travel--places)
+            - [People & body](#people--body)
+            - [Smileys & emotion](#smileys--emotion)
+            - [Miscellaneous](#miscellaneous)
+        - [Showcase](#showcase)
+        - [Extending emojis](#extending-emojis)
+    - [Gradient Frames](#gradient-frames)
+
+# [Snippets](#snippets)
 - [Callout Emojis](#callout-emojis)
 - [Gradient Frames](#gradient-frames)
 
@@ -25,7 +43,7 @@ Use emojis as callout icons, with skin tones!
 
 _Note: you can use the [Obsidian Style Settings plugin](https://github.com/mgmeyers/obsidian-style-settings) to easily switch between skin tones._
 
-### Usage
+### [Usage](#callout-emojis-usage)
 
 In Obsidian, callouts can be created by giving a _type identifier_ such as `[!info]` to the first line of a blockquote such as:
 
@@ -40,9 +58,9 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 
 <img src="./readme-img/callout-emojis-images/gift-example.png" alt="gift emoji in callout" width="500px">
 
-### List of emojis
+### [List of emojis](#list-of-emojis)
 
-##### Activities
+##### [Activities](#activities)
 - `jack-o-lantern`
 - `christmas-tree`
 - `fireworks`
@@ -58,7 +76,7 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 - `thread`
 - `picture`
 
-##### Animals & nature
+##### [Animals & nature](#animals--nature)
 - `monkey`
 - `dog`
 - `fox`
@@ -99,7 +117,7 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 - `fall`
 - `leaf`
 
-##### Food & drink 
+##### [Food & drink](#food--drink)
 - `grapes`
 - `watermelon`
 - `banana`
@@ -132,7 +150,7 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 - `bubble-tea`
 - `ice`
 
-##### Objects
+##### [Objects](#objects)
 - `jeans`
 - `high-heels`
 - `crown`
@@ -174,7 +192,7 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 - `soap`
 - `bubbles`
 
-##### Symbols
+##### [Symbols](#symbols)
 - `warning`
 - `prohibited`
 - `no-entry`
@@ -198,7 +216,7 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 - `square-blue`
 - `square-purple`
 
-##### Travel & places
+##### [Travel & places](#travel--places)
 - `globe-1`
 - `globe-2`
 - `globe-3`
@@ -230,7 +248,7 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 - `drop`
 - `lightning`
 
-##### People & body
+##### [People & body](#people--body)
 - `wave`
 - `wave-light`
 - `wave-medium-light`
@@ -327,7 +345,7 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 - `tongue`
 
 
-##### Smileys & emotion
+##### [Smileys & emotion](#smileys--emotion)
 - `grin-1`
 - `grin-2`
 - `grin-3`
@@ -409,7 +427,7 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 - `speech`
 - `thought`
 
-##### Miscellaneous
+##### [Miscellaneous](#miscellaneous)
 - `flag`
 - `iceberg`
 - `first-aid`

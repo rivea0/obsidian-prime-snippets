@@ -1,0 +1,1436 @@
+/* GPLv3 license
+Gradient Frames Obsidian Snippet
+Author: Eda
+support me: https://buymeacoffee.com/rivea0
+*/
+
+/* @settings
+
+name: Prime Gradient Frames
+id: prime-gradient-frames
+settings:
+    - 
+        id: choose-gradient
+        title: Choose a gradient
+        description: Choose one of the gradients
+        type: class-select
+        allowEmpty: false
+        default: warm-flame
+        options:
+            - 
+                label: Warm Flame
+                value: warm-flame
+            - 
+                label: Night Fade
+                value: night-fade
+            - 
+                label: Spring Warmth
+                value: spring-warmth
+            - 
+                label: Young Passion
+                value: young-passion
+            - 
+                label: Sunny Morning
+                value: sunny-morning
+            - 
+                label: Rainy Ashville
+                value: rainy-ashville
+            - 
+                label: Winter Neva
+                value: winter-neva
+            - 
+                label: Tempting Azure
+                value: tempting-azure
+            - 
+                label: Heavy Rain
+                value: heavy-rain
+            - 
+                label: Malibu Beach
+                value: malibu-beach
+            - 
+                label: True Sunset
+                value: true-sunset
+            - 
+                label: Morpheus Den
+                value: morpheus-den
+            - 
+                label: Wild Apple
+                value: wild-apple
+            - 
+                label: Plum Plate
+                value: plum-plate
+            - 
+                label: Happy Fisher
+                value: happy-fisher
+            - 
+                label: Blessing
+                value: blessing
+            - 
+                label: Snow Again
+                value: snow-again
+            - 
+                label: February Ink
+                value: february-ink
+            - 
+                label: Soft Grass
+                value: soft-grass
+            - 
+                label: Teen Notebook
+                value: teen-notebook
+            - 
+                label: Purple Division
+                value: purple-division
+            - 
+                label: Aqua Splash
+                value: aqua-splash
+            - 
+                label: Love Kiss
+                value: love-kiss
+            - 
+                label: Premium Dark
+                value: premium-dark
+            - 
+                label: Cold Evening
+                value: cold-evening
+            - 
+                label: Summer Games
+                value: summer-games
+            - 
+                label: Midnight Bloom
+                value: midnight-bloom
+            - 
+                label: Crystalline
+                value: crystalline
+            - 
+                label: Le Cocktail
+                value: le-cocktail
+            - 
+                label: Frozen Berry
+                value: frozen-berry
+            - 
+                label: New Retrowave
+                value: new-retrowave
+            - 
+                label: Dense Water
+                value: dense-water
+            - 
+                label: Seashore
+                value: seashore
+            - 
+                label: Cheerful Caramel
+                value: cheerful-caramel
+            - 
+                label: Night Sky
+                value: night-sky
+            - 
+                label: Colorful Peach
+                value: colorful-peach
+            - 
+                label: Plum Bath
+                value: plum-bath
+            - 
+                label: Glass Water
+                value: glass-water
+            - 
+                label: North Miracle
+                value: north-miracle
+            - 
+                label: Smart Indigo
+                value: smart-indigo
+            - 
+                label: Aqua Guidance
+                value: aqua-guidance
+            - 
+                label: Night Call
+                value: night-call
+    - 
+        id: choose-gradient-direction
+        title: Choose gradient direction
+        description: Top or bottom
+        type: class-select
+        allowEmpty: false
+        default: top
+        options:
+            - 
+                label: Top
+                value: top
+            - 
+                label: Bottom
+                value: bottom
+*/
+
+
+:root {
+  --warm-flame-top: linear-gradient(to top, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  --warm-flame-bottom: linear-gradient(to bottom, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+  --night-fade-top: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+  --night-fade-bottom: linear-gradient(to bottom, #a18cd1 0%, #fbc2eb 100%);
+  --spring-warmth-top: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+  --spring-warmth-bottom: linear-gradient(to bottom, #fad0c4 0%,#ffd1ff 100%);
+  --young-passion-top: linear-gradient(to top, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+  --young-passion-bottom: linear-gradient(to bottom, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+  --sunny-morning-top: linear-gradient(to top, #f6d365 0%, #fda085 100%);
+  --sunny-morning-bottom: linear-gradient(to bottom, #f6d365 0%, #fda085 100%);
+  --rainy-ashville-top: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  --rainy-ashville-bottom: linear-gradient(to bottom, #fbc2eb 0%, #a6c1ee 100%);
+  --winter-neva-top: linear-gradient(to top, #a1c4fd 0%, #c2e9fb 100%);
+  --winter-neva-bottom: linear-gradient(to bottom, #a1c4fd 0%, #c2e9fb 100%);
+  --tempting-azure-top: linear-gradient(to top, #84fab0 0%, #8fd3f4 100%);
+  --tempting-azure-bottom: linear-gradient(to bottom, #84fab0 0%, #8fd3f4 100%);
+  --heavy-rain-top: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  --heavy-rain-bottom: linear-gradient(to bottom, #cfd9df 0%, #e2ebf0 100%);
+  --malibu-beach-top: linear-gradient(to top, #4facfe 0%, #00f2fe 100%);
+  --malibu-beach-bottom: linear-gradient(to bottom, #4facfe 0%, #00f2fe 100%);
+  --true-sunset-top: linear-gradient(to top, #fa709a 0%, #fee140 100%);
+  --true-sunset-bottom: linear-gradient(to bottom, #fa709a 0%, #fee140 100%);
+  --morpheus-den-top: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+  --morpheus-den-bottom: linear-gradient(to bottom, #30cfd0 0%, #330867 100%);
+  --wild-apple-top: linear-gradient(to top, #d299c2 0%, #fef9d7 100%);
+  --wild-apple-bottom: linear-gradient(to bottom, #d299c2 0%, #fef9d7 100%);
+  --plum-plate-top: linear-gradient(to top, #667eea 0%, #764ba2 100%);
+  --plum-plate-bottom: linear-gradient(to bottom, #667eea 0%, #764ba2 100%);
+  --happy-fisher-top: linear-gradient(to top, #89f7fe 0%, #66a6ff 100%); 
+  --happy-fisher-bottom: linear-gradient(to bottom, #89f7fe 0%, #66a6ff 100%); 
+  --blessing-top: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
+  --blessing-bottom: linear-gradient(to bottom, #fddb92 0%, #d1fdff 100%);
+  --snow-again-top: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  --snow-again-bottom: linear-gradient(to bottom, #e6e9f0 0%, #eef1f5 100%);
+  --february-ink-top: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  --february-ink-bottom: linear-gradient(to bottom, #accbee 0%, #e7f0fd 100%);
+  --soft-grass-top: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+  --soft-grass-bottom: linear-gradient(to bottom, #c1dfc4 0%, #deecdd 100%);
+  --teen-notebook-top: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+  --teen-notebook-bottom: linear-gradient(to bottom, #9795f0 0%, #fbc8d4 100%);
+  --purple-division-top: linear-gradient(to top, #7028e4 0%, #e5b2ca 100%);
+  --purple-division-bottom: linear-gradient(to bottom, #7028e4 0%, #e5b2ca 100%);
+  --aqua-splash-top: linear-gradient(to top, #13547a 0%, #80d0c7 100%);
+  --aqua-splash-bottom: linear-gradient(to bottom, #13547a 0%, #80d0c7 100%);
+  --love-kiss-top: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  --love-kiss-bottom: linear-gradient(to bottom, #ff0844 0%, #ffb199 100%);
+  --premium-dark-top: linear-gradient(to top, #434343 0%, black 100%);
+  --premium-dark-bottom: linear-gradient(to bottom, #434343 0%, black 100%);
+  --cold-evening-top: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+  --cold-evening-bottom: linear-gradient(to bottom, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+  --summer-games-top: linear-gradient(to top, #92fe9d 0%, #00c9ff 100%);
+  --summer-games-bottom: linear-gradient(to bottom, #92fe9d 0%, #00c9ff 100%);
+  --midnight-bloom-top: linear-gradient(to top, #2b5876 0%, #4e4376 100%);
+  --midnight-bloom-bottom: linear-gradient(to bottom, #2b5876 0%, #4e4376 100%);
+  --crystalline-top: linear-gradient(to top, #00cdac 0%, #8ddad5 100%);
+  --crystalline-bottom: linear-gradient(to bottom, #00cdac 0%, #8ddad5 100%);
+  --le-cocktail-top: linear-gradient(to top, #874da2 0%, #c43a30 100%);
+  --le-cocktail-bottom: linear-gradient(to bottom, #874da2 0%, #c43a30 100%);
+  --frozen-berry-top: linear-gradient(to top, #e8198b 0%, #c7eafd 100%);
+  --frozen-berry-bottom: linear-gradient(to bottom, #e8198b 0%, #c7eafd 100%);
+  --new-retrowave-top: linear-gradient(to top, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);
+  --new-retrowave-bottom: linear-gradient(to bottom, #3b41c5 0%, #a981bb 49%, #ffc8a9 100%);
+  --dense-water-top: linear-gradient(to top, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+  --dense-water-bottom: linear-gradient(to bottom, #3ab5b0 0%, #3d99be 31%, #56317a 100%);
+  --seashore-top: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
+  --seashore-bottom: linear-gradient(to bottom, #209cff 0%, #68e0cf 100%);
+  --cheerful-caramel-top: linear-gradient(to top, #e6b980 0%, #eacda3 100%);
+  --cheerful-caramel-bottom: linear-gradient(to bottom, #e6b980 0%, #eacda3 100%);
+  --night-sky-top: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+  --night-sky-bottom: linear-gradient(to bottom, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+  --colorful-peach-top: linear-gradient(to top, #ed6ea0 0%, #ec8c69 100%);
+  --colorful-peach-bottom: linear-gradient(to bottom, #ed6ea0 0%, #ec8c69 100%);
+  --plum-bath-top: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
+  --plum-bath-bottom: linear-gradient(to bottom, #cc208e 0%, #6713d2 100%);
+  --glass-water-top: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  --glass-water-bottom: linear-gradient(to bottom, #dfe9f3 0%, white 100%);
+  --north-miracle-top: linear-gradient(to top, #00dbde 0%, #fc00ff 100%);
+  --north-miracle-bottom: linear-gradient(to bottom, #00dbde 0%, #fc00ff 100%);
+  --smart-indigo-top: linear-gradient(to top, #b224ef 0%, #7579ff 100%);
+  --smart-indigo-bottom: linear-gradient(to bottom, #b224ef 0%, #7579ff 100%);
+  --aqua-guidance-top: linear-gradient(to top, #007adf 0%, #00ecbc 100%);
+  --aqua-guidance-bottom: linear-gradient(to bottom, #007adf 0%, #00ecbc 100%);
+  --night-call-top: linear-gradient(to top, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
+  --night-call-bottom: linear-gradient(to bottom, #AC32E4 0%, #7918F2 48%, #4801FF 100%);
+  --color-dark: #0d1117;
+  --color-light: #F9FAFC;
+}
+
+body.top.warm-flame .workspace-tab-header-container,
+body.top.warm-flame .workspace-ribbon.mod-left:before,
+body.top.warm-flame .sidebar-toggle-button.mod-right {
+  background-image: var(--warm-flame-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--warm-flame-top);
+}
+
+body.bottom.warm-flame .workspace-tab-header-container,
+body.bottom.warm-flame .workspace-ribbon.mod-left:before,
+body.bottom.warm-flame .sidebar-toggle-button.mod-right {
+  background-image: var(--warm-flame-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--warm-flame-bottom);
+}
+
+body.top.night-fade .workspace-tab-header-container,
+body.top.night-fade .workspace-ribbon.mod-left:before,
+body.top.night-fade .sidebar-toggle-button.mod-right {
+  background-image: var(--night-fade-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--night-fade-top);
+}
+
+body.bottom.night-fade .workspace-tab-header-container,
+body.bottom.night-fade .workspace-ribbon.mod-left:before,
+body.bottom.night-fade .sidebar-toggle-button.mod-right {
+  background-image: var(--night-fade-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--night-fade-bottom);
+}
+
+body.top.spring-warmth .workspace-tab-header-container,
+body.top.spring-warmth .workspace-ribbon.mod-left:before,
+body.top.spring-warmth .sidebar-toggle-button.mod-right {
+  background-image: var(--spring-warmth-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--spring-warmth-top);
+}
+
+body.bottom.spring-warmth .workspace-tab-header-container,
+body.bottom.spring-warmth .workspace-ribbon.mod-left:before,
+body.bottom.spring-warmth .sidebar-toggle-button.mod-right {
+  background-image: var(--spring-warmth-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--spring-warmth-bottom);
+}
+
+body.top.young-passion .workspace-tab-header-container,
+body.top.young-passion .workspace-ribbon.mod-left:before,
+body.top.young-passion .sidebar-toggle-button.mod-right {
+  background-image: var(--young-passion-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--young-passion-top);
+}
+
+body.bottom.young-passion .workspace-tab-header-container,
+body.bottom.young-passion .workspace-ribbon.mod-left:before,
+body.bottom.young-passion .sidebar-toggle-button.mod-right {
+  background-image: var(--young-passion-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--young-passion-bottom);
+}
+
+body.top.sunny-morning .workspace-tab-header-container,
+body.top.sunny-morning .workspace-ribbon.mod-left:before,
+body.top.sunny-morning .sidebar-toggle-button.mod-right {
+  background-image: var(--sunny-morning-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--sunny-morning-top);
+}
+
+body.bottom.sunny-morning .workspace-tab-header-container,
+body.bottom.sunny-morning .workspace-ribbon.mod-left:before,
+body.bottom.sunny-morning .sidebar-toggle-button.mod-right {
+  background-image: var(--sunny-morning-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--sunny-morning-bottom);
+}
+
+body.top.rainy-ashville .workspace-tab-header-container,
+body.top.rainy-ashville .workspace-ribbon.mod-left:before,
+body.top.rainy-ashville .sidebar-toggle-button.mod-right {
+  background-image: var(--rainy-ashville-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--rainy-ashville-top);
+}
+
+body.bottom.rainy-ashville .workspace-tab-header-container,
+body.bottom.rainy-ashville .workspace-ribbon.mod-left:before,
+body.bottom.rainy-ashville .sidebar-toggle-button.mod-right {
+  background-image: var(--rainy-ashville-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--rainy-ashville-bottom);
+}
+
+body.top.winter-neva .workspace-tab-header-container,
+body.top.winter-neva .workspace-ribbon.mod-left:before,
+body.top.winter-neva .sidebar-toggle-button.mod-right {
+  background-image: var(--winter-neva-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--winter-neva-top);
+}
+
+body.bottom.winter-neva .workspace-tab-header-container,
+body.bottom.winter-neva .workspace-ribbon.mod-left:before,
+body.bottom.winter-neva .sidebar-toggle-button.mod-right {
+  background-image: var(--winter-neva-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--winter-neva-bottom);
+}
+
+body.top.tempting-azure .workspace-tab-header-container,
+body.top.tempting-azure .workspace-ribbon.mod-left:before,
+body.top.tempting-azure .sidebar-toggle-button.mod-right {
+  background-image: var(--tempting-azure-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--tempting-azure-top);
+}
+
+body.bottom.tempting-azure .workspace-tab-header-container,
+body.bottom.tempting-azure .workspace-ribbon.mod-left:before,
+body.bottom.tempting-azure .sidebar-toggle-button.mod-right {
+  background-image: var(--tempting-azure-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--tempting-azure-bottom);
+}
+
+body.top.heavy-rain .workspace-tab-header-container,
+body.top.heavy-rain .workspace-ribbon.mod-left:before,
+body.top.heavy-rain .sidebar-toggle-button.mod-right {
+  background-image: var(--heavy-rain-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--heavy-rain-top);
+}
+
+body.bottom.heavy-rain .workspace-tab-header-container,
+body.bottom.heavy-rain .workspace-ribbon.mod-left:before,
+body.bottom.heavy-rain .sidebar-toggle-button.mod-right {
+  background-image: var(--heavy-rain-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--heavy-rain-bottom);
+}
+
+body.top.malibu-beach .workspace-tab-header-container,
+body.top.malibu-beach .workspace-ribbon.mod-left:before,
+body.top.malibu-beach .sidebar-toggle-button.mod-right {
+  background-image: var(--malibu-beach-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--malibu-beach-top);
+}
+
+body.bottom.malibu-beach .workspace-tab-header-container,
+body.bottom.malibu-beach .workspace-ribbon.mod-left:before,
+body.bottom.malibu-beach .sidebar-toggle-button.mod-right {
+  background-image: var(--malibu-beach-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--malibu-beach-bottom);
+}
+
+body.top.true-sunset .workspace-tab-header-container,
+body.top.true-sunset .workspace-ribbon.mod-left:before,
+body.top.true-sunset .sidebar-toggle-button.mod-right {
+  background-image: var(--true-sunset-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--true-sunset-top);
+}
+
+body.bottom.true-sunset .workspace-tab-header-container,
+body.bottom.true-sunset .workspace-ribbon.mod-left:before,
+body.bottom.true-sunset .sidebar-toggle-button.mod-right {
+  background-image: var(--true-sunset-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--true-sunset-bottom);
+}
+
+body.top.morpheus-den .workspace-tab-header-container,
+body.top.morpheus-den .workspace-ribbon.mod-left:before,
+body.top.morpheus-den .sidebar-toggle-button.mod-right {
+  background-image: var(--morpheus-den-top);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--morpheus-den-top);
+}
+
+body.bottom.morpheus-den .workspace-tab-header-container,
+body.bottom.morpheus-den .workspace-ribbon.mod-left:before,
+body.bottom.morpheus-den .sidebar-toggle-button.mod-right {
+  background-image: var(--morpheus-den-bottom);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--morpheus-den-bottom);
+}
+
+body.top.wild-apple .workspace-tab-header-container,
+body.top.wild-apple .workspace-ribbon.mod-left:before,
+body.top.wild-apple .sidebar-toggle-button.mod-right {
+  background-image: var(--wild-apple-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--wild-apple-top);
+}
+
+body.bottom.wild-apple .workspace-tab-header-container,
+body.bottom.wild-apple .workspace-ribbon.mod-left:before,
+body.bottom.wild-apple .sidebar-toggle-button.mod-right {
+  background-image: var(--wild-apple-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--wild-apple-bottom);
+}
+
+body.top.plum-plate .workspace-tab-header-container,
+body.top.plum-plate .workspace-ribbon.mod-left:before,
+body.top.plum-plate .sidebar-toggle-button.mod-right {
+  background-image: var(--plum-plate-top);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--plum-bath-top);
+}
+
+body.bottom.plum-plate .workspace-tab-header-container,
+body.bottom.plum-plate .workspace-ribbon.mod-left:before,
+body.bottom.plum-plate .sidebar-toggle-button.mod-right {
+  background-image: var(--plum-plate-bottom);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--plum-bath-bottom);
+}
+
+body.top.happy-fisher .workspace-tab-header-container,
+body.top.happy-fisher .workspace-ribbon.mod-left:before,
+body.top.happy-fisher .sidebar-toggle-button.mod-right {
+  background-image: var(--happy-fisher-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--happy-fisher-top);
+}
+
+body.bottom.happy-fisher .workspace-tab-header-container,
+body.bottom.happy-fisher .workspace-ribbon.mod-left:before,
+body.bottom.happy-fisher .sidebar-toggle-button.mod-right {
+  background-image: var(--happy-fisher-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--happy-fisher-bottom);
+}
+
+body.top.blessing .workspace-tab-header-container,
+body.top.blessing .workspace-ribbon.mod-left:before,
+body.top.blessing .sidebar-toggle-button.mod-right {
+  background-image: var(--blessing-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--blessing-top);
+}
+
+body.bottom.blessing .workspace-tab-header-container,
+body.bottom.blessing .workspace-ribbon.mod-left:before,
+body.bottom.blessing .sidebar-toggle-button.mod-right {
+  background-image: var(--blessing-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--blessing-bottom);
+}
+
+body.top.snow-again .workspace-tab-header-container,
+body.top.snow-again .workspace-ribbon.mod-left:before,
+body.top.snow-again .sidebar-toggle-button.mod-right {
+  background-image: var(--snow-again-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--snow-again-top);
+}
+
+body.bottom.snow-again .workspace-tab-header-container,
+body.bottom.snow-again .workspace-ribbon.mod-left:before,
+body.bottom.snow-again .sidebar-toggle-button.mod-right {
+  background-image: var(--snow-again-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--snow-again-bottom);
+}
+
+body.top.february-ink .workspace-tab-header-container,
+body.top.february-ink .workspace-ribbon.mod-left:before,
+body.top.february-ink .sidebar-toggle-button.mod-right {
+  background-image: var(--february-ink-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--february-ink-top);
+}
+
+body.bottom.february-ink .workspace-tab-header-container,
+body.bottom.february-ink .workspace-ribbon.mod-left:before,
+body.bottom.february-ink .sidebar-toggle-button.mod-right {
+  background-image: var(--february-ink-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--february-ink-bottom);
+}
+
+body.top.soft-grass .workspace-tab-header-container,
+body.top.soft-grass .workspace-ribbon.mod-left:before,
+body.top.soft-grass .sidebar-toggle-button.mod-right {
+  background-image: var(--soft-grass-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--soft-grass-top);
+}
+
+body.bottom.soft-grass .workspace-tab-header-container,
+body.bottom.soft-grass .workspace-ribbon.mod-left:before,
+body.bottom.soft-grass .sidebar-toggle-button.mod-right {
+  background-image: var(--soft-grass-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--soft-grass-bottom);
+}
+
+body.top.teen-notebook .workspace-tab-header-container,
+body.top.teen-notebook .workspace-ribbon.mod-left:before,
+body.top.teen-notebook .sidebar-toggle-button.mod-right {
+  background-image: var(--teen-notebook-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--teen-notebook-top);
+}
+
+body.bottom.teen-notebook .workspace-tab-header-container,
+body.bottom.teen-notebook .workspace-ribbon.mod-left:before,
+body.bottom.teen-notebook .sidebar-toggle-button.mod-right {
+  background-image: var(--teen-notebook-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--teen-notebook-bottom);
+}
+
+body.top.purple-division .workspace-tab-header-container,
+body.top.purple-division .workspace-ribbon.mod-left:before,
+body.top.purple-division .sidebar-toggle-button.mod-right {
+  background-image: var(--purple-division-top);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--purple-division-top);
+}
+
+body.bottom.purple-division .workspace-tab-header-container,
+body.bottom.purple-division .workspace-ribbon.mod-left:before,
+body.bottom.purple-division .sidebar-toggle-button.mod-right {
+  background-image: var(--purple-division-bottom);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--purple-division-bottom);
+}
+
+body.top.aqua-splash .workspace-tab-header-container,
+body.top.aqua-splash .workspace-ribbon.mod-left:before,
+body.top.aqua-splash .sidebar-toggle-button.mod-right {
+  background-image: var(--aqua-splash-top);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--aqua-splash-top);
+}
+
+body.bottom.aqua-splash .workspace-tab-header-container,
+body.bottom.aqua-splash .workspace-ribbon.mod-left:before,
+body.bottom.aqua-splash .sidebar-toggle-button.mod-right {
+  background-image: var(--aqua-splash-bottom);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--aqua-splash-bottom);
+}
+
+body.top.love-kiss .workspace-tab-header-container,
+body.top.love-kiss .workspace-ribbon.mod-left:before,
+body.top.love-kiss .sidebar-toggle-button.mod-right {
+  background-image: var(--love-kiss-top);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--love-kiss-top);
+}
+
+body.bottom.love-kiss .workspace-tab-header-container,
+body.bottom.love-kiss .workspace-ribbon.mod-left:before,
+body.bottom.love-kiss .sidebar-toggle-button.mod-right {
+  background-image: var(--love-kiss-bottom);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--love-kiss-bottom);
+}
+
+body.top.premium-dark .workspace-tab-header-container,
+body.top.premium-dark .workspace-ribbon.mod-left:before,
+body.top.premium-dark .sidebar-toggle-button.mod-right {
+  background-image: var(--premium-dark-top);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--premium-dark-top);
+}
+
+body.bottom.premium-dark .workspace-tab-header-container,
+body.bottom.premium-dark .workspace-ribbon.mod-left:before,
+body.bottom.premium-dark .sidebar-toggle-button.mod-right {
+  background-image: var(--premium-dark-bottom);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--premium-dark-bottom);
+}
+
+body.top.cold-evening .workspace-tab-header-container,
+body.top.cold-evening .workspace-ribbon.mod-left:before,
+body.top.cold-evening .sidebar-toggle-button.mod-right {
+  background-image: var(--cold-evening-top);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--cold-evening-top);
+}
+
+body.bottom.cold-evening .workspace-tab-header-container,
+body.bottom.cold-evening .workspace-ribbon.mod-left:before,
+body.bottom.cold-evening .sidebar-toggle-button.mod-right {
+  background-image: var(--cold-evening-bottom);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--cold-evening-bottom);
+}
+
+body.top.summer-games .workspace-tab-header-container,
+body.top.summer-games .workspace-ribbon.mod-left:before,
+body.top.summer-games .sidebar-toggle-button.mod-right {
+  background-image: var(--summer-games-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--summer-games-top);
+}
+
+body.bottom.summer-games .workspace-tab-header-container,
+body.bottom.summer-games .workspace-ribbon.mod-left:before,
+body.bottom.summer-games .sidebar-toggle-button.mod-right {
+  background-image: var(--summer-games-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--summer-games-bottom);
+}
+
+body.top.midnight-bloom .workspace-tab-header-container,
+body.top.midnight-bloom .workspace-ribbon.mod-left:before,
+body.top.midnight-bloom .sidebar-toggle-button.mod-right {
+  background-image: var(--midnight-bloom-top);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--midnight-bloom-top);
+}
+
+body.bottom.midnight-bloom .workspace-tab-header-container,
+body.bottom.midnight-bloom .workspace-ribbon.mod-left:before,
+body.bottom.midnight-bloom .sidebar-toggle-button.mod-right {
+  background-image: var(--midnight-bloom-bottom);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--midnight-bloom-bottom);
+}
+
+body.top.crystalline .workspace-tab-header-container,
+body.top.crystalline .workspace-ribbon.mod-left:before,
+body.top.crystalline .sidebar-toggle-button.mod-right {
+  background-image: var(--crystalline-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--crystalline-top);
+}
+
+body.bottom.crystalline .workspace-tab-header-container,
+body.bottom.crystalline .workspace-ribbon.mod-left:before,
+body.bottom.crystalline .sidebar-toggle-button.mod-right {
+  background-image: var(--crystalline-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--crystalline-bottom);
+}
+
+body.top.le-cocktail .workspace-tab-header-container,
+body.top.le-cocktail .workspace-ribbon.mod-left:before,
+body.top.le-cocktail .sidebar-toggle-button.mod-right {
+  background-image: var(--le-cocktail-top);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--le-cocktail-top);
+}
+
+body.bottom.le-cocktail .workspace-tab-header-container,
+body.bottom.le-cocktail .workspace-ribbon.mod-left:before,
+body.bottom.le-cocktail .sidebar-toggle-button.mod-right {
+  background-image: var(--le-cocktail-bottom);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--le-cocktail-bottom);
+}
+
+body.top.frozen-berry .workspace-tab-header-container,
+body.top.frozen-berry .workspace-ribbon.mod-left:before,
+body.top.frozen-berry .sidebar-toggle-button.mod-right {
+  background-image: var(--frozen-berry-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--frozen-berry-top);
+}
+
+body.bottom.frozen-berry .workspace-tab-header-container,
+body.bottom.frozen-berry .workspace-ribbon.mod-left:before,
+body.bottom.frozen-berry .sidebar-toggle-button.mod-right {
+  background-image: var(--frozen-berry-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--frozen-berry-bottom);
+}
+
+body.top.new-retrowave .workspace-tab-header-container,
+body.top.new-retrowave .workspace-ribbon.mod-left:before,
+body.top.new-retrowave .sidebar-toggle-button.mod-right {
+  background-image: var(--new-retrowave-top);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--new-retrowave-top);
+}
+
+body.bottom.new-retrowave .workspace-tab-header-container,
+body.bottom.new-retrowave .workspace-ribbon.mod-left:before,
+body.bottom.new-retrowave .sidebar-toggle-button.mod-right {
+  background-image: var(--new-retrowave-bottom);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--new-retrowave-bottom);
+}
+
+body.top.dense-water .workspace-tab-header-container,
+body.top.dense-water .workspace-ribbon.mod-left:before,
+body.top.dense-water .sidebar-toggle-button.mod-right {
+  background-image: var(--dense-water-top);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--dense-water-top);
+}
+
+body.bottom.dense-water .workspace-tab-header-container,
+body.bottom.dense-water .workspace-ribbon.mod-left:before,
+body.bottom.dense-water .sidebar-toggle-button.mod-right {
+  background-image: var(--dense-water-bottom);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--dense-water-bottom);
+}
+
+body.top.seashore .workspace-tab-header-container,
+body.top.seashore .workspace-ribbon.mod-left:before,
+body.top.seashore .sidebar-toggle-button.mod-right {
+  background-image: var(--seashore-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--seashore-top);
+}
+
+body.bottom.seashore .workspace-tab-header-container,
+body.bottom.seashore .workspace-ribbon.mod-left:before,
+body.bottom.seashore .sidebar-toggle-button.mod-right {
+  background-image: var(--seashore-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--seashore-bottom);
+}
+
+body.top.cheerful-caramel .workspace-tab-header-container,
+body.top.cheerful-caramel .workspace-ribbon.mod-left:before,
+body.top.cheerful-caramel .sidebar-toggle-button.mod-right {
+  background-image: var(--cheerful-caramel-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--cheerful-caramel-top);
+}
+
+body.bottom.cheerful-caramel .workspace-tab-header-container,
+body.bottom.cheerful-caramel .workspace-ribbon.mod-left:before,
+body.bottom.cheerful-caramel .sidebar-toggle-button.mod-right {
+  background-image: var(--cheerful-caramel-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--cheerful-caramel-bottom);
+}
+
+body.top.night-sky .workspace-tab-header-container,
+body.top.night-sky .workspace-ribbon.mod-left:before,
+body.top.night-sky .sidebar-toggle-button.mod-right {
+  background-image: var(--night-sky-top);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--night-sky-top);
+}
+
+body.bottom.night-sky .workspace-tab-header-container,
+body.bottom.night-sky .workspace-ribbon.mod-left:before,
+body.bottom.night-sky .sidebar-toggle-button.mod-right {
+  background-image: var(--night-sky-bottom);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--night-sky-bottom);
+}
+
+body.top.colorful-peach .workspace-tab-header-container,
+body.top.colorful-peach .workspace-ribbon.mod-left:before,
+body.top.colorful-peach .sidebar-toggle-button.mod-right {
+  background-image: var(--colorful-peach-top);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--colorful-peach-top);
+}
+
+body.bottom.colorful-peach .workspace-tab-header-container,
+body.bottom.colorful-peach .workspace-ribbon.mod-left:before,
+body.bottom.colorful-peach .sidebar-toggle-button.mod-right {
+  background-image: var(--colorful-peach-bottom);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--colorful-peach-bottom);
+}
+
+body.top.plum-bath .workspace-tab-header-container,
+body.top.plum-bath .workspace-ribbon.mod-left:before,
+body.top.plum-bath .sidebar-toggle-button.mod-right {
+  background-image: var(--plum-bath-top);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--plum-bath-top);
+}
+
+body.bottom.plum-bath .workspace-tab-header-container,
+body.bottom.plum-bath .workspace-ribbon.mod-left:before,
+body.bottom.plum-bath .sidebar-toggle-button.mod-right {
+  background-image: var(--plum-bath-bottom);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--plum-bath-bottom);
+}
+
+body.top.glass-water .workspace-tab-header-container,
+body.top.glass-water .workspace-ribbon.mod-left:before,
+body.top.glass-water .sidebar-toggle-button.mod-right {
+  background-image: var(--glass-water-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--glass-water-top);
+}
+
+body.bottom.glass-water .workspace-tab-header-container,
+body.bottom.glass-water .workspace-ribbon.mod-left:before,
+body.bottom.glass-water .sidebar-toggle-button.mod-right {
+  background-image: var(--glass-water-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--glass-water-bottom);
+}
+
+body.top.north-miracle .workspace-tab-header-container,
+body.top.north-miracle .workspace-ribbon.mod-left:before,
+body.top.north-miracle .sidebar-toggle-button.mod-right {
+  background-image: var(--north-miracle-top);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--north-miracle-top);
+}
+
+body.bottom.north-miracle .workspace-tab-header-container,
+body.bottom.north-miracle .workspace-ribbon.mod-left:before,
+body.bottom.north-miracle .sidebar-toggle-button.mod-right {
+  background-image: var(--north-miracle-bottom);
+  color: var(--color-dark);
+  --nav-item-color: var(--color-dark);
+  --nav-collapse-icon-color: var(--color-dark);
+  --tab-text-color: var(--color-dark);
+  --tab-text-color-active: var(--color-dark);
+  --tab-text-color-focused: var(--color-dark);
+  --tab-text-color-active-focused: var(--color-dark);
+  --background-modifier-hover: var(--north-miracle-bottom);
+}
+
+body.top.smart-indigo .workspace-tab-header-container,
+body.top.smart-indigo .workspace-ribbon.mod-left:before,
+body.top.smart-indigo .sidebar-toggle-button.mod-right {
+  background-image: var(--smart-indigo-top);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--smart-indigo-top);
+}
+
+body.bottom.smart-indigo .workspace-tab-header-container,
+body.bottom.smart-indigo .workspace-ribbon.mod-left:before,
+body.bottom.smart-indigo .sidebar-toggle-button.mod-right {
+  background-image: var(--smart-indigo-bottom);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--smart-indigo-bottom);
+}
+
+body.top.aqua-guidance .workspace-tab-header-container,
+body.top.aqua-guidance .workspace-ribbon.mod-left:before,
+body.top.aqua-guidance .sidebar-toggle-button.mod-right {
+  background-image: var(--aqua-guidance-top);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--aqua-guidance-top);
+}
+
+body.bottom.aqua-guidance .workspace-tab-header-container,
+body.bottom.aqua-guidance .workspace-ribbon.mod-left:before,
+body.bottom.aqua-guidance .sidebar-toggle-button.mod-right {
+  background-image: var(--aqua-guidance-bottom);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--aqua-guidance-bottom);
+}
+
+body.top.night-call .workspace-tab-header-container,
+body.top.night-call .workspace-ribbon.mod-left:before,
+body.top.night-call .sidebar-toggle-button.mod-right {
+  background-image: var(--night-call-top);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--night-call-top);
+}
+
+body.bottom.night-call .workspace-tab-header-container,
+body.bottom.night-call .workspace-ribbon.mod-left:before,
+body.bottom.night-call .sidebar-toggle-button.mod-right {
+  background-image: var(--night-call-bottom);
+  color: var(--color-light);
+  --nav-item-color: var(--color-light);
+  --nav-collapse-icon-color: var(--color-light);
+  --tab-text-color: var(--color-light);
+  --tab-text-color-active: var(--color-light);
+  --tab-text-color-focused: var(--color-light);
+  --tab-text-color-active-focused: var(--color-light);
+  --background-modifier-hover: var(--night-call-bottom);
+}
+
+/* 
+.workspace-tab-header-inner-title {
+  color: black;
+} */
+
+/* Close icon color */
+.theme-dark .workspace-tab-header.is-active .workspace-tab-header-inner-close-button {
+  color: var(--color-light)
+}

@@ -1,8 +1,8 @@
 > [!tip]
 > You can also check out the [Obsidian Prime theme]() as well, although you don't have to use the theme to use these snippets!
 
-
 # Usage
+
 Download (or copy) the CSS snippet you want to use, and add it to `.obsidian/snippets` folder inside your Obsidian vault.
 
 Or, clone the repository to add all the snippets:
@@ -14,32 +14,75 @@ cp obsidian-prime-snippets/*.css <path/to/your/vault>/.obsidian/snippets
 ```
 
 # Table of Contents
+
 - [Snippets](#snippets)
-    - [Callout Emojis](#callout-emojis)
-        - [Usage](#callout-emojis-usage)
-        - [List of emojis](#list-of-emojis)
-            - [Activities](#activities)
-            - [Animals & nature](#animals--nature)
-            - [Food & drink](#food--drink)
-            - [Objects](#objects)
-            - [Symbols](#symbols)
-            - [Travel & places](#travel--places)
-            - [People & body](#people--body)
-            - [Smileys & emotion](#smileys--emotion)
-            - [Miscellaneous](#miscellaneous)
-        - [Showcase](#showcase)
-        - [Extending emojis](#extending-emojis)
-    - [Gradient Frames](#gradient-frames)
+  - [Callout Emojis](#callout-emojis)
+    - [Usage](#callout-emojis-usage)
+    - [List of emojis](#list-of-emojis)
+      - [Activities](#activities)
+      - [Animals & nature](#animals--nature)
+      - [Food & drink](#food--drink)
+      - [Objects](#objects)
+      - [Symbols](#symbols)
+      - [Travel & places](#travel--places)
+      - [People & body](#people--body)
+      - [Smileys & emotion](#smileys--emotion)
+      - [Miscellaneous](#miscellaneous)
+    - [Showcase](#showcase)
+    - [Extending emojis](#extending-emojis)
+  - [Gradient Frames](#gradient-frames)
+    - [List of gradients](#list-of-gradients)
+      - [Warm Flame](#warm-flame)
+      - [Night Fade](#night-fade)
+      - [Spring Warmth](#spring-warmth)
+      - [Young Passion](#young-passion)
+      - [Sunny Morning](#sunny-morning)
+      - [Rainy Ashville](#rainy-ashville)
+      - [Winter Neva](#winter-neva)
+      - [Tempting Azure](#tempting-azure)
+      - [Heavy Rain](#heavy-rain)
+      - [Malibu Beach](#malibu-beach)
+      - [True Sunset](#true-sunset)
+      - [Morpheus Den](#morpheus-den)
+      - [Wild Apple](#wild-apple)
+      - [Plum Plate](#plum-plate)
+      - [Happy Fisher](#happy-fisher)
+      - [Blessing](#blessing)
+      - [Snow Again](#snow-again)
+      - [February Ink](#february-ink)
+      - [Soft Grass](#soft-grass)
+      - [Teen Notebook](#teen-notebook)
+      - [Purple Division](#purple-division)
+      - [Aqua Splash](#aqua-splash)
+      - [Love Kiss](#love-kiss)
+      - [Premium Dark](#premium-dark)
+      - [Cold Evening](#cold-evening)
+      - [Summer Games](#summer-games)
+      - [Midnight Bloom](#midnight-bloom)
+      - [Crystalline](#crystalline)
+      - [Le Cocktail](#le-cocktail)
+      - [Frozen Berry](#frozen-berry)
+      - [New Retrowave](#new-retrowave)
+      - [Dense Water](#dense-water)
+      - [Seashore](#seashore)
+      - [Cheerful Caramel](#cheerful-caramel)
+      - [Night Sky](#night-sky)
+      - [Colorful Peach](#colorful-peach)
+      - [Plum Bath](#plum-bath)
+      - [Glass Water](#glass-water)
+      - [North Miracle](#north-miracle)
+      - [Smart Indigo](#smart-indigo)
+      - [Aqua Guidance](#aqua-guidance)
+      - [Night Call](#night-call)
+    - [Extending gradients](#extending-gradients)
 
 # [Snippets](#snippets)
-- [Callout Emojis](#callout-emojis)
-- [Gradient Frames](#gradient-frames)
 
 ## [Callout Emojis](#callout-emojis)
 
 Use emojis as callout icons, with skin tones!
 
-<img src="./readme-img/callout-emojis-images/skin-tones.png" alt="wave emoji with different skin tones" width="500px">
+<img src="./readme-img/callout-emojis-images/skin-tones.png" alt="wave emoji with different skin tones" width="750px">
 
 _Note: you can use the [Obsidian Style Settings plugin](https://github.com/mgmeyers/obsidian-style-settings) to easily switch between skin tones._
 
@@ -61,6 +104,7 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 ### [List of emojis](#list-of-emojis)
 
 ##### [Activities](#activities)
+
 - `jack-o-lantern`
 - `christmas-tree`
 - `fireworks`
@@ -77,6 +121,7 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 - `picture`
 
 ##### [Animals & nature](#animals--nature)
+
 - `monkey`
 - `dog`
 - `fox`
@@ -118,6 +163,7 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 - `leaf`
 
 ##### [Food & drink](#food--drink)
+
 - `grapes`
 - `watermelon`
 - `banana`
@@ -151,6 +197,7 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 - `ice`
 
 ##### [Objects](#objects)
+
 - `jeans`
 - `high-heels`
 - `crown`
@@ -193,6 +240,7 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 - `bubbles`
 
 ##### [Symbols](#symbols)
+
 - `warning`
 - `prohibited`
 - `no-entry`
@@ -217,6 +265,7 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 - `square-purple`
 
 ##### [Travel & places](#travel--places)
+
 - `globe-1`
 - `globe-2`
 - `globe-3`
@@ -249,6 +298,7 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 - `lightning`
 
 ##### [People & body](#people--body)
+
 - `wave`
 - `wave-light`
 - `wave-medium-light`
@@ -344,8 +394,8 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 - `mouth`
 - `tongue`
 
-
 ##### [Smileys & emotion](#smileys--emotion)
+
 - `grin-1`
 - `grin-2`
 - `grin-3`
@@ -428,6 +478,7 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 - `thought`
 
 ##### [Miscellaneous](#miscellaneous)
+
 - `flag`
 - `iceberg`
 - `first-aid`
@@ -448,7 +499,6 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 - `green-jar`
 - `purple-jar`
 - `hacker-cat`
-
 
 ### Showcase
 
@@ -513,8 +563,10 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 <img src="./readme-img/callout-emojis-images/59.png" alt="59" width="500px">
 
 ### Extending emojis
+
 You can add more emojis from [OpenMoji](https://openmoji.org/library/) by downloading the SVG of the emoji you choose. This repository includes a `helpers.mjs` file to convert it easily to a CSS variable.
 For example, you can get the CSS variable of your SVG:
+
 ```js
 console.log(
   makeEmojiCSSVariable(
@@ -527,9 +579,9 @@ And add it to `:root` in `callout-emojis.css`.
 Then, inside `callout-emojis.css`, you can add the new variable to be the callout icon:
 
 ```css
-.callout[data-callout="unicorn"] {
-	--callout-color: <your-prefered-color-rgb>;
-	--callout-icon: var(--unicorn);
+.callout[data-callout='unicorn'] {
+  --callout-color: <your-prefered-color-rgb>;
+  --callout-icon: var(--unicorn);
 }
 ```
 
@@ -537,3 +589,218 @@ _Note that the `unicorn` emoji is already included as an icon!_
 
 ## [Gradient Frames](#gradient-frames)
 
+Add color to your Obsidian window with hand-picked gradients!
+
+<img src="./readme-img/gradient-frames-images/gradient-frames.png" alt="gradient frames" width="1000px">
+
+42 linear gradients are from [WebGradients](https://webgradients.com).
+
+You can choose the linear gradient _direction_: `top` or `bottom`.
+
+_Note: You can use the [Obsidian Style Settings plugin](https://github.com/mgmeyers/obsidian-style-settings) to easily switch between gradients and their direction._
+
+### [List of gradients](#list-of-gradients)
+
+_The top two frames show the `top` direction in gradients in dark and light themes, and the ones at the bottom display the when the direction is set to `bottom`_.
+
+##### [Warm Flame](#warm-flame)
+
+<img src="./readme-img/gradient-frames-images/01-warm-flame.png" alt="warm flame" width="750px">
+
+##### [Night Fade](#night-fade)
+
+<img src="./readme-img/gradient-frames-images/02-night-fade.png" alt="night fade" width="750px">
+
+##### [Spring Warmth](#spring-warmth)
+
+<img src="./readme-img/gradient-frames-images/03-spring-warmth.png" alt="spring warmth" width="750px">
+
+##### [Young Passion](#young-passion)
+
+<img src="./readme-img/gradient-frames-images/04-young-passion.png" alt="young passion" width="750px">
+
+##### [Sunny Morning](#sunny-morning)
+
+<img src="./readme-img/gradient-frames-images/05-sunny-morning.png" alt="sunny morning" width="750px">
+
+##### [Rainy Ashville](#rainy-ashville)
+
+<img src="./readme-img/gradient-frames-images/06-rainy-ashville.png" alt="rainy ashville" width="750px">
+
+##### [Winter Neva](#winter-neva)
+
+<img src="./readme-img/gradient-frames-images/07-winter-neva.png" alt="winter neva" width="750px">
+
+##### [Tempting Azure](#tempting-azure)
+
+<img src="./readme-img/gradient-frames-images/03-spring-warmth.png" alt="warm flame" width="750px">
+
+##### [Heavy Rain](#heavy-rain)
+
+<img src="./readme-img/gradient-frames-images/09-heavy-rain.png" alt="heavy rain" width="750px">
+
+##### [Malibu Beach](#malibu-beach)
+
+<img src="./readme-img/gradient-frames-images/10-malibu-beach.png" alt="malibu beach" width="750px">
+
+##### [True Sunset](#true-sunset)
+
+<img src="./readme-img/gradient-frames-images/11-true-sunset.png" alt="true sunset" width="750px">
+
+##### [Morpheus Den](#morpheus-den)
+
+<img src="./readme-img/gradient-frames-images/12-morpheus-den.png" alt="morpheus den" width="750px">
+
+##### [Wild Apple](#wild-apple)
+
+<img src="./readme-img/gradient-frames-images/13-wild-apple.png" alt="wild apple" width="750px">
+
+##### [Plum Plate](#plum-plate)
+
+<img src="./readme-img/gradient-frames-images/14-plum-plate.png" alt="plum plate" width="750px">
+
+##### [Happy Fisher](#happy-fisher)
+
+<img src="./readme-img/gradient-frames-images/15-happy-fisher.png" alt="happy fisher" width="750px">
+
+##### [Blessing](#blessing)
+
+<img src="./readme-img/gradient-frames-images/16-blessing.png" alt="blessing" width="750px">
+
+##### [Snow Again](#snow-again)
+
+<img src="./readme-img/gradient-frames-images/17-snow-again.png" alt="snow again" width="750px">
+
+##### [February Ink](#february-ink)
+
+<img src="./readme-img/gradient-frames-images/18-february-ink.png" alt="february ink" width="750px">
+
+##### [Soft Grass](#soft-grass)
+
+<img src="./readme-img/gradient-frames-images/19-soft-grass.png" alt="soft grass" width="750px">
+
+##### [Teen Notebook](#teen-notebook)
+
+<img src="./readme-img/gradient-frames-images/20-teen-notebook.png" alt="teen notebook" width="750px">
+
+##### [Purple Division](#purple-division)
+
+<img src="./readme-img/gradient-frames-images/21-purple-division.png" alt="purple division" width="750px">
+
+##### [Aqua Splash](#aqua-splash)
+
+<img src="./readme-img/gradient-frames-images/22-aqua-splash.png" alt="aqua splash" width="750px">
+
+##### [Love Kiss](#love-kiss)
+
+<img src="./readme-img/gradient-frames-images/23-love-kiss.png" alt="love kiss" width="750px">
+
+##### [Premium Dark](#premium-dark)
+
+<img src="./readme-img/gradient-frames-images/24-premium-dark.png" alt="premium dark" width="750px">
+
+##### [Cold Evening](#cold-evening)
+
+<img src="./readme-img/gradient-frames-images/25-cold-evening.png" alt="cold evening" width="750px">
+
+##### [Summer Games](#summer-games)
+
+<img src="./readme-img/gradient-frames-images/26-summer-games.png" alt="summer games" width="750px">
+
+##### [Midnight Bloom](#midnight-bloom)
+
+<img src="./readme-img/gradient-frames-images/27-midnight-bloom.png" alt="midnight bloom" width="750px">
+
+##### [Crystalline](#crystalline)
+
+<img src="./readme-img/gradient-frames-images/28-crystalline.png" alt="crystalline" width="750px">
+
+##### [Le Cocktail](#le-cocktail)
+
+<img src="./readme-img/gradient-frames-images/29-le-cocktail.png" alt="le cocktail" width="750px">
+
+##### [Frozen Berry](#frozen-berry)
+
+<img src="./readme-img/gradient-frames-images/30-frozen-berry.png" alt="frozen berry" width="750px">
+
+##### [New Retrowave](#new-retrowave)
+
+<img src="./readme-img/gradient-frames-images/31-new-retrowave.png" alt="new retrowave" width="750px">
+
+##### [Dense Water](#dense-water)
+
+<img src="./readme-img/gradient-frames-images/32-dense-water.png" alt="dense water" width="750px">
+
+##### [Seashore](#seashore)
+
+<img src="./readme-img/gradient-frames-images/33-seashore.png" alt="seashore" width="750px">
+
+##### [Cheerful Caramel](#cheerful-caramel)
+
+<img src="./readme-img/gradient-frames-images/34-cheerful-caramel.png" alt="cheerful caramel" width="750px">
+
+##### [Night Sky](#night-sky)
+
+<img src="./readme-img/gradient-frames-images/35-night-sky.png" alt="night sky" width="750px">
+
+##### [Colorful Peach](#colorful-peach)
+
+<img src="./readme-img/gradient-frames-images/36-colorful-peach.png" alt="colorful peach" width="750px">
+
+##### [Plum Bath](#plum-bath)
+
+<img src="./readme-img/gradient-frames-images/37-plum-bath.png" alt="plum bath" width="750px">
+
+##### [Glass Water](#glass-water)
+
+<img src="./readme-img/gradient-frames-images/38-glass-water.png" alt="glass water" width="750px">
+
+##### [North Miracle](#north-miracle)
+
+<img src="./readme-img/gradient-frames-images/39-north-miracle.png" alt="north miracle" width="750px">
+
+##### [Smart Indigo](#smart-indigo)
+
+<img src="./readme-img/gradient-frames-images/40-smart-indigo.png" alt="smart indigo" width="750px">
+
+##### [Aqua Guidance](#aqua-guidance)
+
+<img src="./readme-img/gradient-frames-images/41-aqua-guidance.png" alt="aqua guidance" width="750px">
+
+##### [Night Call](#night-call)
+
+<img src="./readme-img/gradient-frames-images/42-night-call.png" alt="night call" width="750px">
+
+### [Extending gradients](#extending-gradients)
+
+You can add more gradients of your choosing with `top` and `bottom` variations, such as:
+
+```css
+:root {
+  ...
+  --rainy-ashville-top: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  --rainy-ashville-bottom: linear-gradient(to bottom, #fbc2eb 0%, #a6c1ee 100%);
+}
+```
+
+You can then create the styles:
+
+```css
+body.top.rainy-ashville .workspace-tab-header-container,
+body.top.rainy-ashville .workspace-ribbon.mod-left:before,
+body.top.rainy-ashville .sidebar-toggle-button.mod-right {
+  background-image: var(--rainy-ashville-top);
+  color: var(--color-dark); /* or var(--color-light) */
+  ...
+}
+
+body.bottom.rainy-ashville .workspace-tab-header-container,
+body.bottom.rainy-ashville .workspace-ribbon.mod-left:before,
+body.bottom.rainy-ashville .sidebar-toggle-button.mod-right {
+  background-image: var(--rainy-ashville-bottom);
+  color: var(--color-dark); /* or var(--color-light) */
+  ...
+}
+```
+
+And add them in `gradient-frames.css` in `.obsidian/snippets` folder inside your Obsidian vault.

@@ -159,6 +159,7 @@ settings:
                 value: bottom
 */
 
+/* Gradients source: https://webgradients.com */
 
 :root {
   --warm-flame-top: linear-gradient(to top, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);

@@ -20,7 +20,7 @@ settings:
         description: Change emoji skin tone
         type: class-select
         allowEmpty: false
-        default: Default
+        default: default
         options:
             - 
                 label: Default

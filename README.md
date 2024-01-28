@@ -1,5 +1,5 @@
 > [!tip]
-> You can also check out the [Obsidian Prime theme]() as well, although you don't have to use the theme to use these snippets!
+> You can also check out the [Obsidian Prime theme](https://github.com/rivea0/obsidian-prime) as well, although you don't have to use the theme to use these snippets!
 
 # Usage
 
@@ -804,3 +804,7 @@ body.bottom.rainy-ashville .sidebar-toggle-button.mod-right {
 ```
 
 And add them in `gradient-frames.css` in `.obsidian/snippets` folder inside your Obsidian vault.
+
+### License
+
+GPLv3

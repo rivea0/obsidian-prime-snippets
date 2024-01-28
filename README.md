@@ -13,6 +13,11 @@ git clone git@github.com:rivea0/obsidian-prime-snippets.git
 cp obsidian-prime-snippets/*.css <path/to/your/vault>/.obsidian/snippets
 ```
 
+You can buy me a coffee to support my work:
+
+<a href="https://www.buymeacoffee.com/rivea0"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=rivea0&button_colour=9ca0fa&font_colour=000000&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00"></a>
+
+
 # Table of Contents
 
 - [Snippets](#snippets)

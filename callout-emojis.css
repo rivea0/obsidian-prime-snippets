@@ -2291,3 +2291,7 @@ body.dark-skin-tone .callout[data-callout="handshake"] {
 	width: 32px;
 	height: 32px;
 }
+
+.callout-title {
+	align-items: center;
+}

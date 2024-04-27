@@ -37,48 +37,6 @@ You can buy me a coffee to support my work:
     - [Extending emojis](#extending-emojis)
   - [Gradient Frames](#gradient-frames)
     - [List of gradients](#list-of-gradients)
-      - [Warm Flame](#warm-flame)
-      - [Night Fade](#night-fade)
-      - [Spring Warmth](#spring-warmth)
-      - [Young Passion](#young-passion)
-      - [Sunny Morning](#sunny-morning)
-      - [Rainy Ashville](#rainy-ashville)
-      - [Winter Neva](#winter-neva)
-      - [Tempting Azure](#tempting-azure)
-      - [Heavy Rain](#heavy-rain)
-      - [Malibu Beach](#malibu-beach)
-      - [True Sunset](#true-sunset)
-      - [Morpheus Den](#morpheus-den)
-      - [Wild Apple](#wild-apple)
-      - [Plum Plate](#plum-plate)
-      - [Happy Fisher](#happy-fisher)
-      - [Blessing](#blessing)
-      - [Snow Again](#snow-again)
-      - [February Ink](#february-ink)
-      - [Soft Grass](#soft-grass)
-      - [Teen Notebook](#teen-notebook)
-      - [Purple Division](#purple-division)
-      - [Aqua Splash](#aqua-splash)
-      - [Love Kiss](#love-kiss)
-      - [Premium Dark](#premium-dark)
-      - [Cold Evening](#cold-evening)
-      - [Summer Games](#summer-games)
-      - [Midnight Bloom](#midnight-bloom)
-      - [Crystalline](#crystalline)
-      - [Le Cocktail](#le-cocktail)
-      - [Frozen Berry](#frozen-berry)
-      - [New Retrowave](#new-retrowave)
-      - [Dense Water](#dense-water)
-      - [Seashore](#seashore)
-      - [Cheerful Caramel](#cheerful-caramel)
-      - [Night Sky](#night-sky)
-      - [Colorful Peach](#colorful-peach)
-      - [Plum Bath](#plum-bath)
-      - [Glass Water](#glass-water)
-      - [North Miracle](#north-miracle)
-      - [Smart Indigo](#smart-indigo)
-      - [Aqua Guidance](#aqua-guidance)
-      - [Night Call](#night-call)
     - [Extending gradients](#extending-gradients)
 
 # [Snippets](#snippets)
@@ -87,7 +45,7 @@ You can buy me a coffee to support my work:
 
 Use emojis as callout icons, with skin tones!
 
-<img src="./readme-img/callout-emojis-images/skin-tones.png" alt="wave emoji with different skin tones" width="750px">
+<img src="./readme-img/skin-tones.png" alt="wave emoji with different skin tones" width="750px">
 
 _Note: you can use the [Obsidian Style Settings plugin](https://github.com/mgmeyers/obsidian-style-settings) to easily switch between skin tones._
 
@@ -104,7 +62,7 @@ _See more at https://help.obsidian.md/Editing+and+formatting/Callouts._
 
 Emoji names work just like type identifiers, so you can add, for example, `[!gift]` to display the gift emoji (🎁) as the icon:
 
-<img src="./readme-img/callout-emojis-images/gift-example.png" alt="gift emoji in callout" width="500px">
+<img src="./readme-img/gift-example.png" alt="gift emoji in callout" width="750px">
 
 ### [List of emojis](#list-of-emojis)
 
@@ -507,65 +465,7 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 
 ### Showcase
 
-<img src="./readme-img/callout-emojis-images/01.png" alt="01" width="500px">
-<img src="./readme-img/callout-emojis-images/02.png" alt="02" width="500px">
-<img src="./readme-img/callout-emojis-images/03.png" alt="03" width="500px">
-<img src="./readme-img/callout-emojis-images/04.png" alt="04" width="500px">
-<img src="./readme-img/callout-emojis-images/05.png" alt="05" width="500px">
-<img src="./readme-img/callout-emojis-images/06.png" alt="06" width="500px">
-<img src="./readme-img/callout-emojis-images/07.png" alt="07" width="500px">
-<img src="./readme-img/callout-emojis-images/08.png" alt="08" width="500px">
-<img src="./readme-img/callout-emojis-images/09.png" alt="09" width="500px">
-<img src="./readme-img/callout-emojis-images/10.png" alt="10" width="500px">
-<img src="./readme-img/callout-emojis-images/11.png" alt="11" width="500px">
-<img src="./readme-img/callout-emojis-images/12.png" alt="12" width="500px">
-<img src="./readme-img/callout-emojis-images/13.png" alt="13" width="500px">
-<img src="./readme-img/callout-emojis-images/14.png" alt="14" width="500px">
-<img src="./readme-img/callout-emojis-images/15.png" alt="15" width="500px">
-<img src="./readme-img/callout-emojis-images/16.png" alt="16" width="500px">
-<img src="./readme-img/callout-emojis-images/17.png" alt="17" width="500px">
-<img src="./readme-img/callout-emojis-images/18.png" alt="18" width="500px">
-<img src="./readme-img/callout-emojis-images/19.png" alt="19" width="500px">
-<img src="./readme-img/callout-emojis-images/20.png" alt="20" width="500px">
-<img src="./readme-img/callout-emojis-images/21.png" alt="21" width="500px">
-<img src="./readme-img/callout-emojis-images/22.png" alt="22" width="500px">
-<img src="./readme-img/callout-emojis-images/23.png" alt="23" width="500px">
-<img src="./readme-img/callout-emojis-images/24.png" alt="24" width="500px">
-<img src="./readme-img/callout-emojis-images/25.png" alt="25" width="500px">
-<img src="./readme-img/callout-emojis-images/26.png" alt="26" width="500px">
-<img src="./readme-img/callout-emojis-images/27.png" alt="27" width="500px">
-<img src="./readme-img/callout-emojis-images/28.png" alt="28" width="500px">
-<img src="./readme-img/callout-emojis-images/29.png" alt="29" width="500px">
-<img src="./readme-img/callout-emojis-images/30.png" alt="30" width="500px">
-<img src="./readme-img/callout-emojis-images/31.png" alt="31" width="500px">
-<img src="./readme-img/callout-emojis-images/32.png" alt="32" width="500px">
-<img src="./readme-img/callout-emojis-images/33.png" alt="33" width="500px">
-<img src="./readme-img/callout-emojis-images/34.png" alt="34" width="500px">
-<img src="./readme-img/callout-emojis-images/35.png" alt="35" width="500px">
-<img src="./readme-img/callout-emojis-images/36.png" alt="36" width="500px">
-<img src="./readme-img/callout-emojis-images/37.png" alt="37" width="500px">
-<img src="./readme-img/callout-emojis-images/38.png" alt="38" width="500px">
-<img src="./readme-img/callout-emojis-images/39.png" alt="39" width="500px">
-<img src="./readme-img/callout-emojis-images/40.png" alt="40" width="500px">
-<img src="./readme-img/callout-emojis-images/41.png" alt="41" width="500px">
-<img src="./readme-img/callout-emojis-images/42.png" alt="42" width="500px">
-<img src="./readme-img/callout-emojis-images/43.png" alt="43" width="500px">
-<img src="./readme-img/callout-emojis-images/44.png" alt="44" width="500px">
-<img src="./readme-img/callout-emojis-images/45.png" alt="45" width="500px">
-<img src="./readme-img/callout-emojis-images/46.png" alt="46" width="500px">
-<img src="./readme-img/callout-emojis-images/47.png" alt="47" width="500px">
-<img src="./readme-img/callout-emojis-images/48.png" alt="48" width="500px">
-<img src="./readme-img/callout-emojis-images/49.png" alt="49" width="500px">
-<img src="./readme-img/callout-emojis-images/50.png" alt="50" width="500px">
-<img src="./readme-img/callout-emojis-images/51.png" alt="51" width="500px">
-<img src="./readme-img/callout-emojis-images/52.png" alt="52" width="500px">
-<img src="./readme-img/callout-emojis-images/53.png" alt="53" width="500px">
-<img src="./readme-img/callout-emojis-images/54.png" alt="54" width="500px">
-<img src="./readme-img/callout-emojis-images/55.png" alt="55" width="500px">
-<img src="./readme-img/callout-emojis-images/56.png" alt="56" width="500px">
-<img src="./readme-img/callout-emojis-images/57.png" alt="57" width="500px">
-<img src="./readme-img/callout-emojis-images/58.png" alt="58" width="500px">
-<img src="./readme-img/callout-emojis-images/59.png" alt="59" width="500px">
+_See full showcase in [the wiki](https://github.com/rivea0/obsidian-prime-snippets/wiki/Callout-Emojis#showcase)._
 
 ### Extending emojis
 
@@ -596,7 +496,7 @@ _Note that the `unicorn` emoji is already included as an icon!_
 
 Add color to your Obsidian window with hand-picked gradients!
 
-<img src="./readme-img/gradient-frames-images/gradient-frames.png" alt="gradient frames" width="1000px">
+<img src="./readme-img/gradient-frames.png" alt="gradient frames" width="1000px">
 
 42 linear gradients are from [WebGradients](https://webgradients.com).
 
@@ -606,175 +506,7 @@ _Note: You can use the [Obsidian Style Settings plugin](https://github.com/mgmey
 
 ### [List of gradients](#list-of-gradients)
 
-_The top two frames show the `top` direction in gradients in dark and light themes, and the ones at the bottom display the when the direction is set to `bottom`_.
-
-##### [Warm Flame](#warm-flame)
-
-<img src="./readme-img/gradient-frames-images/01-warm-flame.png" alt="warm flame" width="750px">
-
-##### [Night Fade](#night-fade)
-
-<img src="./readme-img/gradient-frames-images/02-night-fade.png" alt="night fade" width="750px">
-
-##### [Spring Warmth](#spring-warmth)
-
-<img src="./readme-img/gradient-frames-images/03-spring-warmth.png" alt="spring warmth" width="750px">
-
-##### [Young Passion](#young-passion)
-
-<img src="./readme-img/gradient-frames-images/04-young-passion.png" alt="young passion" width="750px">
-
-##### [Sunny Morning](#sunny-morning)
-
-<img src="./readme-img/gradient-frames-images/05-sunny-morning.png" alt="sunny morning" width="750px">
-
-##### [Rainy Ashville](#rainy-ashville)
-
-<img src="./readme-img/gradient-frames-images/06-rainy-ashville.png" alt="rainy ashville" width="750px">
-
-##### [Winter Neva](#winter-neva)
-
-<img src="./readme-img/gradient-frames-images/07-winter-neva.png" alt="winter neva" width="750px">
-
-##### [Tempting Azure](#tempting-azure)
-
-<img src="./readme-img/gradient-frames-images/03-spring-warmth.png" alt="warm flame" width="750px">
-
-##### [Heavy Rain](#heavy-rain)
-
-<img src="./readme-img/gradient-frames-images/09-heavy-rain.png" alt="heavy rain" width="750px">
-
-##### [Malibu Beach](#malibu-beach)
-
-<img src="./readme-img/gradient-frames-images/10-malibu-beach.png" alt="malibu beach" width="750px">
-
-##### [True Sunset](#true-sunset)
-
-<img src="./readme-img/gradient-frames-images/11-true-sunset.png" alt="true sunset" width="750px">
-
-##### [Morpheus Den](#morpheus-den)
-
-<img src="./readme-img/gradient-frames-images/12-morpheus-den.png" alt="morpheus den" width="750px">
-
-##### [Wild Apple](#wild-apple)
-
-<img src="./readme-img/gradient-frames-images/13-wild-apple.png" alt="wild apple" width="750px">
-
-##### [Plum Plate](#plum-plate)
-
-<img src="./readme-img/gradient-frames-images/14-plum-plate.png" alt="plum plate" width="750px">
-
-##### [Happy Fisher](#happy-fisher)
-
-<img src="./readme-img/gradient-frames-images/15-happy-fisher.png" alt="happy fisher" width="750px">
-
-##### [Blessing](#blessing)
-
-<img src="./readme-img/gradient-frames-images/16-blessing.png" alt="blessing" width="750px">
-
-##### [Snow Again](#snow-again)
-
-<img src="./readme-img/gradient-frames-images/17-snow-again.png" alt="snow again" width="750px">
-
-##### [February Ink](#february-ink)
-
-<img src="./readme-img/gradient-frames-images/18-february-ink.png" alt="february ink" width="750px">
-
-##### [Soft Grass](#soft-grass)
-
-<img src="./readme-img/gradient-frames-images/19-soft-grass.png" alt="soft grass" width="750px">
-
-##### [Teen Notebook](#teen-notebook)
-
-<img src="./readme-img/gradient-frames-images/20-teen-notebook.png" alt="teen notebook" width="750px">
-
-##### [Purple Division](#purple-division)
-
-<img src="./readme-img/gradient-frames-images/21-purple-division.png" alt="purple division" width="750px">
-
-##### [Aqua Splash](#aqua-splash)
-
-<img src="./readme-img/gradient-frames-images/22-aqua-splash.png" alt="aqua splash" width="750px">
-
-##### [Love Kiss](#love-kiss)
-
-<img src="./readme-img/gradient-frames-images/23-love-kiss.png" alt="love kiss" width="750px">
-
-##### [Premium Dark](#premium-dark)
-
-<img src="./readme-img/gradient-frames-images/24-premium-dark.png" alt="premium dark" width="750px">
-
-##### [Cold Evening](#cold-evening)
-
-<img src="./readme-img/gradient-frames-images/25-cold-evening.png" alt="cold evening" width="750px">
-
-##### [Summer Games](#summer-games)
-
-<img src="./readme-img/gradient-frames-images/26-summer-games.png" alt="summer games" width="750px">
-
-##### [Midnight Bloom](#midnight-bloom)
-
-<img src="./readme-img/gradient-frames-images/27-midnight-bloom.png" alt="midnight bloom" width="750px">
-
-##### [Crystalline](#crystalline)
-
-<img src="./readme-img/gradient-frames-images/28-crystalline.png" alt="crystalline" width="750px">
-
-##### [Le Cocktail](#le-cocktail)
-
-<img src="./readme-img/gradient-frames-images/29-le-cocktail.png" alt="le cocktail" width="750px">
-
-##### [Frozen Berry](#frozen-berry)
-
-<img src="./readme-img/gradient-frames-images/30-frozen-berry.png" alt="frozen berry" width="750px">
-
-##### [New Retrowave](#new-retrowave)
-
-<img src="./readme-img/gradient-frames-images/31-new-retrowave.png" alt="new retrowave" width="750px">
-
-##### [Dense Water](#dense-water)
-
-<img src="./readme-img/gradient-frames-images/32-dense-water.png" alt="dense water" width="750px">
-
-##### [Seashore](#seashore)
-
-<img src="./readme-img/gradient-frames-images/33-seashore.png" alt="seashore" width="750px">
-
-##### [Cheerful Caramel](#cheerful-caramel)
-
-<img src="./readme-img/gradient-frames-images/34-cheerful-caramel.png" alt="cheerful caramel" width="750px">
-
-##### [Night Sky](#night-sky)
-
-<img src="./readme-img/gradient-frames-images/35-night-sky.png" alt="night sky" width="750px">
-
-##### [Colorful Peach](#colorful-peach)
-
-<img src="./readme-img/gradient-frames-images/36-colorful-peach.png" alt="colorful peach" width="750px">
-
-##### [Plum Bath](#plum-bath)
-
-<img src="./readme-img/gradient-frames-images/37-plum-bath.png" alt="plum bath" width="750px">
-
-##### [Glass Water](#glass-water)
-
-<img src="./readme-img/gradient-frames-images/38-glass-water.png" alt="glass water" width="750px">
-
-##### [North Miracle](#north-miracle)
-
-<img src="./readme-img/gradient-frames-images/39-north-miracle.png" alt="north miracle" width="750px">
-
-##### [Smart Indigo](#smart-indigo)
-
-<img src="./readme-img/gradient-frames-images/40-smart-indigo.png" alt="smart indigo" width="750px">
-
-##### [Aqua Guidance](#aqua-guidance)
-
-<img src="./readme-img/gradient-frames-images/41-aqua-guidance.png" alt="aqua guidance" width="750px">
-
-##### [Night Call](#night-call)
-
-<img src="./readme-img/gradient-frames-images/42-night-call.png" alt="night call" width="750px">
+_See the list of all the gradients in [the wiki](https://github.com/rivea0/obsidian-prime-snippets/wiki/Gradient-Frames#list-of-gradients)._
 
 ### [Extending gradients](#extending-gradients)
 

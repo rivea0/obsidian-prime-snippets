@@ -33,6 +33,7 @@ You can buy me a coffee to support my work:
       - [People & body](#people--body)
       - [Smileys & emotion](#smileys--emotion)
       - [Flags](#flags)
+      - [Clocks](#clocks)
       - [Miscellaneous](#miscellaneous)
     - [Showcase](#showcase)
     - [Extending emojis](#extending-emojis)
@@ -811,6 +812,32 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 - `--flag-england`
 - `--flag-scotland`
 - `--flag-wales`
+
+##### [Clocks](#clocks)
+- `--12`
+- `--12-30`
+- `--1`
+- `--1-30`
+- `--2`
+- `--2-30`
+- `--3`
+- `--3-30`
+- `--4`
+- `--4-30`
+- `--5`
+- `--5-30`
+- `--6`
+- `--6-30`
+- `--7`
+- `--7-30`
+- `--8`
+- `--8-30`
+- `--9`
+- `--9-30`
+- `--10`
+- `--10-30`
+- `--11`
+- `--11-30`
 
 ##### [Miscellaneous](#miscellaneous)
 

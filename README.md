@@ -13,11 +13,6 @@ git clone git@github.com:rivea0/obsidian-prime-snippets.git
 cp obsidian-prime-snippets/*.css <path/to/your/vault>/.obsidian/snippets
 ```
 
-You can buy me a coffee to support my work:
-
-<a href="https://www.buymeacoffee.com/rivea0"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=rivea0&button_colour=8c90f9&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00" /></a>
-
-
 # Table of Contents
 
 - [Snippets](#snippets)
@@ -913,7 +908,7 @@ You can add more gradients of your choosing with `top` and `bottom` variations, 
 
 ```css
 :root {
-  ...
+  /* ... */
   --rainy-ashville-top: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
   --rainy-ashville-bottom: linear-gradient(to bottom, #fbc2eb 0%, #a6c1ee 100%);
 }

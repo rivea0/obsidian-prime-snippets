@@ -29,6 +29,7 @@ cp obsidian-prime-snippets/*.css <path/to/your/vault>/.obsidian/snippets
       - [Smileys & emotion](#smileys--emotion)
       - [Flags](#flags)
       - [Clocks](#clocks)
+      - [Brands & logos](#logos)
       - [Miscellaneous](#miscellaneous)
     - [Showcase](#showcase)
     - [Extending emojis](#extending-emojis)
@@ -833,6 +834,55 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 - `--10-30`
 - `--11`
 - `--11-30`
+
+##### [Brands & logos](#logos)
+- `pinterest`
+- `youtube`
+- `github`
+- `linkedin`
+- `android`
+- `musicbrainz`
+- `openfoodfacts`
+- `openstreetmap`
+- `wikidata`
+- `dotnet`
+- `golang`
+- `kotlin`
+- `ruby`
+- `firefox`
+- `safari`
+- `opera`
+- `chromium`
+- `chrome`
+- `netscape-navigator`
+- `ie`
+- `edge`
+- `inaturalist`
+- `gitlab`
+- `mastodon`
+- `peertube`
+- `pixelfed`
+- `signal`
+- `element`
+- `jellyfin`
+- `reddit`
+- `discord`
+- `c`
+- `cplusplus`
+- `csharp`
+- `chrome-canary`
+- `firefox-dev`
+- `firefox-nightly`
+- `js`
+- `ts`
+- `wa`
+- `svg`
+- `md`
+- `winrar`
+- `ubuntu`
+- `windows`
+- `artstation`
+- `apple-logo`
 
 ##### [Miscellaneous](#miscellaneous)
 

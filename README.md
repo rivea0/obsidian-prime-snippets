@@ -358,6 +358,27 @@ Emoji names work just like type identifiers, so you can add, for example, `[!gif
 - `fire`
 - `drop`
 - `lightning`
+- `ship`
+- `bicycle`
+- `ring-buoy`
+- `skateboard`
+- `roller-skate`
+- `luggage`
+- `milky-way`
+- `tornado`
+- `bus`
+- `sunrise`
+- `sunset`
+- `thermometer`
+- `helicopter`
+- `train`
+- `taxi`
+- `parachute`
+- `sailboat`
+- `umbrella`
+- `umbrella-rain`
+- `comet`
+- `snowflake`
 
 ##### [People & body](#people--body)
 
